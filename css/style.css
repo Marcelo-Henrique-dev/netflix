@@ -38,6 +38,7 @@ header > .container{
     margin-right: 15px;
 }
 .menu-header ul li a{
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
 }
@@ -79,4 +80,66 @@ header > .container{
     text-align: center;
     line-height: 15px;
     font-size: 10px;
+}
+
+/* DESTAQUE */
+
+.destaque::after{
+    width: 100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgba(12,12,13,0.6615896358543417) 0%, rgba(26,26,27,0.4599089635854342) 40%, rgba(19,19,20,0.2498249299719888) 70%, rgba(15,15,15,0) 100%);
+    z-index: 2;
+}
+.destaque{
+    position: absolute;
+    background-image: url('../img/banner.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2%;
+}
+.texto-destaque{
+    color: white;
+    z-index: 3;
+    position: relative;
+}
+.texto-destaque img{
+    max-width: 400px;
+}
+.texto-destaque h3{
+    font-size: 30px;
+}
+.texto-destaque p{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.buttons{
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.buttons a{
+    color: white;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.buttons a i{
+    margin-right: 10px;
+}
+.buttons a:hover{
+    background-color: #fff;
+    color: black;
+    transform: scale(1.03);
 }
