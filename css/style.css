@@ -189,10 +189,6 @@ header > .container{
 }
 
 @media (max-width: 768px){
-    .vitrine-single-banner{
-        width: 33.3%;
-        padding-top: 33.3%;
-    }
     .vitrine .vitrine-flex{
         margin-left: 0;
         width: 100%;
